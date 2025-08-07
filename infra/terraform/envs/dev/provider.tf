@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 provider "google" {
-  credentials = file("${path.module}/../../../gcp/credentials.json")
+  credentials = credentials = file("../../gcp/credentials.json")
   project     = "poc-clima-cotacao"
 }
