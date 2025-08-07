@@ -6,7 +6,7 @@ on:
       - 'infra/terraform/envs/dev/**'
       - '.github/workflows/terraform-dev.yml'
     branches:
-      - main
+      - master
 
 jobs:
   terraform:
