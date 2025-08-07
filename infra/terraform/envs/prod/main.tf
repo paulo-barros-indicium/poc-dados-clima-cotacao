@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "s3" {
-  source      = "../../modules/s3" #teste
+  source      = "../../modules/s3"
   bucket_name = "poc-dados-prod-raw"
   environment = "prod"
 }
