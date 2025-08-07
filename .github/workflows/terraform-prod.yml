@@ -1,14 +1,7 @@
-name: Terraform - Prod #teste
+name: Terraform - Prod
 
 on:
   push:
-    paths:
-      - 'infra/terraform/envs/prod/**'
-      - '.github/workflows/terraform-prod.yml'
-    branches:
-      - master
-
-  pull_request:
     paths:
       - 'infra/terraform/envs/prod/**'
       - '.github/workflows/terraform-prod.yml'
@@ -47,5 +40,5 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/master'
-        run: terraform apply -auto-approve
+        run: terraform apply -auto-approve 
 
