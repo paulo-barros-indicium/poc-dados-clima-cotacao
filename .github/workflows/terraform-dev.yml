@@ -32,7 +32,8 @@ jobs:
       - name: Write GCP credentials file
         run: |
           mkdir -p ../../gcp
-          echo "${{ secrets.GCP_CREDENTIALS }}" > ../../gcp/credentials.json
+          echo "${{ secrets.GCP_CREDENTIALS }}" | jq '.' > ../../gcp/credentials.json
+
 
       - name: Terraform Init
         run: terraform init
