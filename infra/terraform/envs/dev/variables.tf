@@ -7,7 +7,7 @@ variable "region" {
 }
 
 variable "gcp_credentials" {
-  type      = string
-  sensitive = true
+  type        = string
+  sensitive   = true
   description = "Credenciais do GCP no formato JSON compactado, injetadas via GitHub Secrets"
 }
