@@ -45,6 +45,7 @@ jobs:
       - name: Terraform Plan
         run: terraform plan
 
-      - name: Terraform Apply (após merge)
-        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/master'
         run: terraform apply -auto-approve
+
