@@ -1,0 +1,16 @@
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+
+# Logs e arquivos sensíveis
+*.log
+*.tfvars
+*.tfvars.json
+
+# Arquivos temporários
+*.bak
+*.tmp
+*.swp
+.DS_Store
