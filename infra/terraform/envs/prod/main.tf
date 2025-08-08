@@ -6,7 +6,7 @@ module "s3" {
 
 module "bigquery" {
   source      = "../../modules/bigquery"
-  dataset_id  = "clima_cotacao"
+  dataset_id  = "clima_cotacao_prod"
   location    = "us"
   environment = "prod"
 }
