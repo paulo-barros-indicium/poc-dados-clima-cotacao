@@ -4,9 +4,9 @@ module "s3" {
   environment = "dev"
 } #teste
 
-module "bigquery" {
-  source      = "../../modules/bigquery"
-  dataset_id  = "clima_cotacao"
-  location    = "us"
-  environment = "dev"
-}
+#module "bigquery" {
+#  source      = "../../modules/bigquery"
+#  dataset_id  = "clima_cotacao"
+#  location    = "us"
+#  environment = "dev"
+#}
